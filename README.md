@@ -1,5 +1,7 @@
 # PiggyBank Project
 
+Visualiser le projet dans ce lien `` https://mypiggy-bank.netlify.app/ ``
+
 ## Objectifs du projet
 
 * Se familiariser avec la syntaxe JavaScript.
