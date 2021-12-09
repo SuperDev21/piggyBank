@@ -1,0 +1,18 @@
+h2,h3{
+    color: #bc6e6e !important;
+}
+.deleteInput{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.deleteInput:active{
+    outline:none
+}
+.tr-title{
+    background-color: #bc6e6e;
+}
+.btn-add{
+    background-color:#bc6e6e;
+    color: white;
+}

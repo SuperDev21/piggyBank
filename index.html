@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>PiggyBank</title>
+</head>
+<body>
+    <div class="container ">
+      <h2 class='text-center my-4 font-weight-bold '>My Piggy Bank</h2>
+    <table class="table mt-4 w-75 m-auto" id="myTable">
+        <thead>
+          <tr class="text-white tr-title">
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Loto Ticket</td>
+            <td></td>
+            <td class="prix">20</td>
+            <td><button class="deleteInput" type="submit"><img src="images/Group.png" alt="image de poubelle"></button></td>
+          </tr>
+          <tr>
+            <td>Beers</td>
+            <td>Party nigh \0/</td>
+            <td class="prix">-15</td>
+            <td><button class="deleteInput" type="submit"><img src="images/Group.png" alt="image de poubelle"></button></td>
+          </tr>
+          <tr>
+            <td>Phone Bill</td>
+            <td>January</td>
+            <td class="prix" >-29.99</td>
+            <td><button class="deleteInput" type="submit"><img src="images/Group.png" alt="image de poubelle"></button></td>
+          </tr>
+        </tbody>
+    </table>
+    <div id="demo" class="text-success w-75 m-auto"></div>
+    <div class="my-5 w-75 m-auto">
+      <hr >
+    </div>
+    <h3 class="text-center mt-4 font-weight-bold">Add new expense</h3>
+    <form class="w-75 m-auto">
+        <div class="form">
+        <div class="col mb-3">
+            <label for="validationServer01">Name</label>
+            <input type="text" class="form-control is-valid" id="name" placeholder="Add name"  required>
+            <span id="validatedName" class="text-danger"></span>
+        </div>
+        <div class="col mb-3">
+            <label for="validationServer02"> Description</label>
+            <textarea type="text" class="form-control is-valid" id="description" placeholder="Add description"></textarea>
+        </div>
+        <div class="col mb-3">
+            <label for="validationServer01">price</label>
+            <input type="text" class="form-control is-valid" id="price" placeholder="Add price">
+            <span id="validatedPrice" class="text-danger"></span>
+        </div>
+        <div class="d-flex justify-content-end m-3"> 
+            <button class="btn btn-add" type="button"id="btninp">Add expense</button>
+        </div>
+    </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
